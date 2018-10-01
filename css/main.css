@@ -5,6 +5,28 @@
         transition: 1s ease-in-out;
     }
 
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     /* Loader*/
 
     .loader-container {
@@ -66,14 +88,15 @@
         width: 100%;
         height: auto;
         opacity: 0.5;
-    }   
+    }
+
     .breakout.visible img {
 
         margin-top: 200px;
         margin-left: 100px;
     }
 
-     
+
 
     .separator {
         width: 100%;
@@ -81,7 +104,7 @@
         background-color: gainsboro;
 
     }
-   
+
 
     /* mouse scroll*/
     html {
@@ -90,7 +113,7 @@
     }
 
     body {
-
+background-color:dimgrey;
         font-size: 1.8rem;
         font-family: "Roboto", sans-serif;
         overflow-x: hidden;
@@ -260,6 +283,7 @@
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
     }
+
     .btn-blue {
         background: #104F9C;
     }
@@ -267,6 +291,7 @@
     .btn-blue:hover {
         background: #E01E27;
     }
+
     .contact-submit .btn {
         font-size: 18px;
         width: auto;
@@ -274,9 +299,9 @@
         border: 0;
     }
 
-     
-   
-  
+
+
+
     /* NAWIGACJA*/
     .navbar-default {
         /*background: rgba(16, 79, 156, 0.15);*/
@@ -334,11 +359,11 @@
         border-bottom: 1px solid #fff;
     }
 
-   
 
-    
 
-    
+
+
+
     .loaded .body-wrapper {
         -webkit-filter: blur(0px);
         filter: blur(0px);
@@ -365,12 +390,11 @@
         transform: rotateX(40deg) scale(0.01);
     }
 
-    
 
-    
-/* HOMEPAGE*/
+
+    /* HOMEPAGE*/
     header {
-        =background: url(../img/header.jpg) bottom;
+        =background: url(../img/header.jpg) fixed no-repeat;
 
         height: 100vh;
         background-size: cover;
@@ -380,7 +404,7 @@
         min-height: 450px;
     }
 
-    
+
 
     #home header h1 {
         top: 50%;
@@ -427,13 +451,13 @@
         perspective: 1000px;
     }
 
-   
-    
-     /* full body workout*/
+
+
+    /* full body workout*/
 
     #full {
-       /* background: url(../img/2016_FBW_Koszulki_Logo_Black_poprawka.png)  right fixed;*/
-        background-color:  darkgray;
+         
+      
         display: -webkit-box;
         display: -ms-flexbox;
         -webkit-box-orient: vertical;
@@ -443,53 +467,59 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         text-align: left;
-        transform: rotate(-9deg) ;
--webkit-transform: rotate(-9deg) ;
--moz-transform: rotate(-9deg) ;
--o-transform: rotate(-9deg) ;
--ms-transform: rotate(-9deg) ;
+        
     }
-#full img {
-    width: 80%;
-    height: auto;
-}
+
+    #full .img {
+               height: 700px;
+        background: url(../img/37849278_239150403372102_6632458604957925376_n.jpg)   ;
+        background-size: cover;
+        object-fit: cover;
+         transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+         
+
+    }
 
     #full .content {
-        padding: 180px 0;
+        padding: 50px 0;
+      
     }
 
     #full h3 {
+        padding-top: 150px;
         font-family: "Raleway", sans-serif;
         font-weight: 900;
         color: red;
         font-size: 4rem;
         padding-bottom: 30px;
-text-align: center;
+        text-align: center;
     }
 
     #full p {
-       color: black;
+        color: black;
         text-align: center;
         font-size: 2.0rem;
         padding-bottom: 10px;
     }
 
     #full .container {
-        width: 90%;
+        width: 100%;
     }
 
 
 
 
-      
+
 
 
     /* KETTLEBELL*/
 
     #kettlebell {
-      /*  background: url(../img/Full_body.jpg)    left fixed;
-      background-size: cover;
-        */
+     
         display: -webkit-box;
         display: -ms-flexbox;
         -webkit-box-orient: vertical;
@@ -498,42 +528,44 @@ text-align: center;
         flex-direction: column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-      transform: rotate(9deg) ;
--webkit-transform: rotate(9deg) ;
--moz-transform: rotate(9deg) ;
--o-transform: rotate(9deg) ;
--ms-transform: rotate(9deg) ;
-         
-    }
-/*#kettlebell img {
-    width: 100%;
-    height: 700px;
-    background-position: fixed;
-    
-}*/
-#kettlebell .img {
-     width:50%;
-    height: 700px;
-    background: url(../img/Full_body.jpg)  ;
-      background-size: cover;
-    object-fit: cover;
-        
-}
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
 
-    
+    }
+
+ 
+    #kettlebell .img {
+        width: 50%;
+        height: 700px;
+        background: url(../img/Full_body.jpg)  ;
+        background-size: cover;
+        object-fit: cover;
+         transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+
+
+    }
+
+
 
     #kettlebell h3 {
-        padding: 180px 0;
+        padding: 100px 0;
         font-family: "Raleway", sans-serif;
         font-weight: 900;
         color: red;
         font-size: 4rem;
         padding-bottom: 30px;
-text-align: center;
+        text-align: center;
     }
 
     #kettlebell p {
-         text-align: center;
+        text-align: center;
         font-size: 2.0rem;
         padding-bottom: 10px;
         color: black;
@@ -541,18 +573,21 @@ text-align: center;
 
     #kettlebell .container {
         width: 100%;
+         transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+
     }
 
-    
-    
+
+
     /* HOME TREINING*/
 
     #home-trening {
-        background: url(../img/about.JPG)  no-repeat left fixed;
-        /* height: auto;*/
-        
-        background-size: cover;
-        position: relative;
+
+
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -563,27 +598,22 @@ text-align: center;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         text-align: left;
-}
+    }
 
-    #home-trening img {
-        position: absolute;
-        width: 15%;
-        height: 30%;
-        bottom: -20px;
-        right: 50px;
+    #home-trening .img {
+        width: 50%;
+        height: 700px;
+        background: url(../img/about.JPG)  ;
+        background-size: cover;
+        object-fit: cover;
     }
 
     #home-trening .content {
-        padding: 180px 0;
-        width: 30%;
+        padding: 50px 0;
+        text-align: center;
+
     }
 
-    #home-trening .breakout {
-        bottom: -90px;
-        right: 20px;
-        width: auto;
-        height: auto;
-    }
 
     #home-trening h3 {
         font-family: "Raleway", sans-serif;
@@ -594,21 +624,20 @@ text-align: center;
     }
 
     #home-trening p {
-        color: #ffffff;
+        color: black;
         font-size: 2.0rem;
         padding-bottom: 10px;
     }
 
     #home-trening .container {
-        width: 90%;
+        width: 100%;
     }
 
-
+ 
     /* METODYKA*/
 
     #metodyka {
-        background: url(../img/metodyka.jpg) center fixed;
-        object-fit: cover;
+       
         display: -webkit-box;
         display: -ms-flexbox;
         -webkit-box-orient: vertical;
@@ -617,12 +646,19 @@ text-align: center;
         flex-direction: column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        text-align: right;
+       
     }
-
+#metodyka .img {
+        width: 50%;
+        height: 700px;
+        background: url(../img/metodyka.jpg)  ;
+        background-size: cover;
+        object-fit: cover;
+    }
     #metodyka .content {
-        padding: 180px 0;
-        width: 45%;
+        padding: 50px 0;
+        text-align: center;
+       
     }
 
     #metodyka h3 {
@@ -635,25 +671,22 @@ text-align: center;
     }
 
     #metodyka p {
-        color: #ffffff;
+        color: black;
         font-size: 2.0rem;
         padding-bottom: 10px;
     }
 
     #metodyka .container {
-        width: 90%;
+        width: 100%;
     }
 
-    
-
-/* ETAPY NAUKI*/
 
 
-    #etapy {
-        background: url(../img/etapy.jpg) center fixed;
+    /* ETAPY NAUKI*/
 
-        background-size: cover;
-        */ display: -webkit-box;
+
+    #etapy {       
+         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
@@ -662,15 +695,22 @@ text-align: center;
         flex-direction: column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: left;
+        justify-content: center;
     }
 
-    
-    
+#etapy .img {
+        width: 50%;
+        height: 700px;
+        background: url(../img/etapy.jpg)  ;
+        background-size: cover;
+        object-fit: cover;
+    }
+
 
     #etapy .content {
         padding: 50px 0;
-        width: 50%;
+        text-align: center;
+        
     }
 
     #etapy h3 {
@@ -679,31 +719,22 @@ text-align: center;
         color: red;
         font-size: 4rem;
         padding-bottom: 30px;
-        padding-top: 180px;
+        
     }
 
     #etapy p {
-        color: #ffffff;
+        color: black;
         font-size: 2.0rem;
         padding-bottom: 10px;
     }
 
     #etapy .container {
-        width: 90%;
+        width: 100%;
     }
 
 
 
 
-    /*.about_img {
-    position:absolute;
-    
-}
-.About_img img {
-    width: 300px;
-    height: 300px;
-}
-*/
     /* HOME OFERTA
 #home-oferta {
   position: relative;
@@ -782,7 +813,11 @@ text-align: center;
   width: auto !important;
   height: 200px !important; }*/
 
-    /* FOOTER*/
+   
+
+
+
+/* FOOTER*/
     footer {
         background: #333;
         color: #fff;
@@ -837,8 +872,8 @@ text-align: center;
         padding-left: 0;
     }
 
-    /* O MNIE*/
-    #o-mnie header {
+   /* /* O MNIE*/
+   /* #o-mnie header {
         background: url(../img/header-o-mnie.jpg);
         background-size: cover;
         background-position: center;
@@ -890,7 +925,7 @@ text-align: center;
     }
 
     /* PERSONAL*/
-    #personal {
+   /* #personal {
         position: relative;
         min-height: 100vh;
     }
@@ -925,7 +960,7 @@ text-align: center;
     }
 
     /* EXPIRIENCE*/
-    #expirience {
+    /*#expirience {
         position: relative;
         background: #333333;
         color: #ffffff;
@@ -964,7 +999,7 @@ text-align: center;
     }
 
     /* O MNIE CTA*/
-    #o-mnie-cta {
+   /* #o-mnie-cta {
         padding: 30px 0;
     }
 
@@ -993,7 +1028,7 @@ text-align: center;
         color: #ffffff;
         font-size: 2rem;
     }
-
+/*
     /* KONTAKT*/
     #kontakt {
         color: #fff;
@@ -1068,7 +1103,7 @@ text-align: center;
         height: 100%;
     }
 
-    .swiper-slide {
+    /*.swiper-slide {
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1081,7 +1116,7 @@ text-align: center;
         align-items: center;
         /* turn off autoHeight in swiper js config also*/
         height: inherit !important;
-    }
+    }*/
 
 
 

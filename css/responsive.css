@@ -58,7 +58,7 @@
   -webkit-transition: 0.5s cubic-bezier(0.2, 0.45, 0.9, 0.76);
   transition: 0.5s cubic-bezier(0.2, 0.45, 0.9, 0.76);
   color: transparent;
-  text-transform: uppercase; }
+  }
   .block-reveal:before {
     content: '';
     position: absolute;
@@ -1080,50 +1080,81 @@ background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPS
 
   }
 @media (max-width: 767px) {
-  #win-or-lose .container {
-    position: relative;
-    z-index: 4;
-    background: transparent; }
-
+  
   #home header {
     background: url(../img//HEADER.JPG) no-repeat center center fixed;
     background-size: cover;
     background-position:right; } }
+
+
+
+
 
 @media (min-width: 768px) {
-  #win-or-lose .container {
-    position: relative;
-    z-index: 4;
-    background: transparent; }
-
+  
   #home header {
     background: url(../img//HEADER.JPG) no-repeat center center fixed;
     background-size: cover;
     background-position:right; } }
- @media (max-width: 767px) {
+ 
 
-        #o-mnie header h1,
-        #home header h1 {
-            width: 100%;
-        }
 
-        .block-element {
-            margin-top: 10px;
-        }
-
-        .promo__text-container {
-            padding-left: 0 !important;
-        }
-
-    } 
 
 
 @media (max-width: 576px) {
-  #win-or-lose .container {
-    position: relative;
-    z-index: 4;
-    background: transparent; }
-
+    #full .img {
+        width: auto;
+        height:200px;
+    }
+    #full h3 {
+        padding-top: 20px;
+    }
+    #full p {
+        font-size: 1.4rem;
+    }
+    #kettlebell .img {
+        width: auto;
+        height:200px;
+    }
+    #kettlebell  h3 {
+        padding-top: 20px;
+    }
+    #kettlebell  p {
+        font-size: 1.4rem;
+    }
+    #home-trening .img {
+        width: auto;
+        height:200px;
+    }
+    #home-trening  h3 {
+        padding-top: 20px;
+    }
+    #home-trening  p {
+        font-size: 1.4rem;
+    }
+          #metodyka  .img {
+        width: auto;
+        height:200px;
+    }
+    #metodyka   h3 {
+        padding-top: 20px;
+    }
+    #metodyka  p {
+        font-size: 1.4rem;
+    }  
+ #etapy .img {
+        width: auto;
+        height:200px;
+    }
+    #etapy  h3 {
+        padding-top: 20px;
+    }
+    #etapy  p {
+        font-size: 1.4rem;
+    }  
+    
+    
+    
   #home header {
     background: url(../img/HEADER.JPG) no-repeat center  ;
     background-size: cover;
